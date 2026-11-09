@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DIVISI COFFEE</title>
+    <link rel="stylesheet" href="css/style.css?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <nav class="navbar">
+        <!-- LOGO HEADER -->
+        <a href="#" class="logo" onclick="showPage('home')">
+          <img src="images/divmenu.png" alt="DIVISI COFFEE" />
+        </a>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="active" onclick="showPage('home')"> Home </a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('menu')"> Menu </a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('about')"> About </a>
+          </li>
+          <li>
+            <a href="#" onclick="showPage('contact')"> Contact </a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+      </nav>
+    </header>
+
+    <!-- =======================================================
+                    HOME
+======================================================= -->
+
+    <section id="home" class="page">
+      <div class="hero">
+        <div class="hero-content">
+          <span class="subtitle"> Kopi dari Kampung </span>
+          <h1>
+            Energy triples
+            <br />
+            With coffee
+          </h1>
+          <p>The day feels incomplete without coffee. Find your energy here!</p>
+          <div class="hero-button">
+            <button class="btn-secondary" onclick="showPage('menu')">
+              Lihat Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================
+                    MENU
+======================================================= -->
+
+    <section id="menu" class="page">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Kampung 250ml"
+            data-price="16000"
+          >
+            <span class="best-seller-badge">Best Seller</span>
+            <img src="images/ksk.png" alt="Kopi Susu Kampung" />
+            <h3>Kopi Susu Kampung 250ml</h3>
+            <p>Rp16.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Kental Manis | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Palm Sugar 250ml"
+            data-price="16000"
+          >
+            <span class="best-seller-badge">Best Seller</span>
+            <img src="images/palmsugar.png" alt="" />
+            <h3>Kopi Susu Palm Sugar 250ml</h3>
+            <p>Rp16.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Palm Sugar | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Coffee Latte 250ml"
+            data-price="15000"
+          >
+            <img src="images/latte.png" alt="" />
+            <h3>Coffee Latte 250ml</h3>
+            <p>Rp15.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Black Coffee 250ml"
+            data-price="15000"
+          >
+            <img src="images/black.png" alt="" />
+            <h3>Black Coffee 250ml</h3>
+            <p>Rp15.000</p>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div class="menu-card" data-name="Mochacino 250ml" data-price="17000">
+            <img src="images/mochacino.png" alt="" />
+            <h3>Mochacino 250ml</h3>
+            <p>Rp18.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Chocolate | Kental Manis | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Banana Creamy"
+            data-price="18000"
+          >
+            <img src="images/banana.jpg" alt="" />
+            <h3>Kopi Susu Banana Creamy 250ml</h3>
+            <p>Rp18.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Banana Creamy | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Hazelnut"
+            data-price="18000"
+          >
+            <img src="images/hazelnut.jpg" alt="" />
+            <h3>Kopi Susu Hazelnut 250ml</h3>
+            <p>Rp18.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Hazelnut | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Butterscotch"
+            data-price="18000"
+          >
+            <img src="images/Butterscotch.png" alt="" />
+            <h3>Kopi Susu Butterscotch 250ml</h3>
+            <p>Rp18.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Butterscotch | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+          <div
+            class="menu-card"
+            data-name="Kopi Susu Caramel"
+            data-price="18000"
+          >
+            <img src="images/caramel.png" alt="" />
+            <h3>Kopi Susu Caramel 250ml</h3>
+            <p>Rp18.000</p>
+            <div class="menu-composition">
+              <strong>Komposisi</strong>
+              <span>Espresso | Caramel | Fresh Milk</span>
+            </div>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+
+          <div
+            class="menu-card chocolate-card"
+            data-name="Chocolate 250ml"
+            data-price="17000"
+          >
+            <img src="images/coklat.png" alt="" />
+            <h3>Chocolate 250ml</h3>
+            <p>Rp16.000</p>
+            <button class="add-cart-btn" type="button">+ Keranjang</button>
+          </div>
+        </div>
+        <aside class="cart-box" aria-live="polite">
+          <div class="cart-heading">
+            <div>
+              <span class="cart-label">PESANAN KAMU</span>
+              <h3>Keranjang <span id="cart-count">0</span></h3>
+            </div>
+            <button id="clear-cart" type="button">Kosongkan</button>
+          </div>
+          <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Keranjang masih kosong.</p>
+          </div>
+          <div class="cart-footer">
+            <div class="cart-total">
+              <span>Total</span>
+              <strong id="cart-total">Rp0</strong>
+            </div>
+            <a
+              id="whatsapp-checkout"
+              class="whatsapp-checkout disabled"
+              href="#"
+            >
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </aside>
+        <button class="back-btn" onclick="showPage('about')">About Us ⇢</button>
+      </div>
+    </section>
+
+    <!--==================================================*
+* ABOUT PAGE
+*==================================================-->
+
+    <section id="about" class="page">
+      <div class="about-hero"></div>
+      <div class="about-hero-title">
+        <h2>About Us</h2>
+      </div>
+
+      <div class="about-container">
+        <!-- CONTENT ABOUT -->
+        <div class="about-content">
+          <span class="about-subtitle"> ABOUT DIVISI COFFEE </span>
+          <h2>
+            Secangkir Kopi,
+            <br />
+            <span>Satu Cerita</span>
+          </h2>
+          <p>
+            Divisi Coffee hadir untuk memberikan pengalaman menikmati kopi yang
+            sederhana, nyaman, dan berkualitas.
+          </p>
+          <p>
+            Kami percaya bahwa kopi bukan hanya tentang rasa, tetapi juga
+            tentang momen. Dari secangkir kopi di pagi hari sampai menemani
+            waktu santai bersama orang-orang terdekat.
+          </p>
+          <!-- ABOUT INFO -->
+          <div class="about-info">
+            <div class="about-info-item">
+              <div class="about-icon">☕</div>
+              <div>
+                <h4>Quality Coffee</h4>
+                <p>Bahan berkualitas dengan rasa yang konsisten.</p>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <div class="about-icon">♥</div>
+              <div>
+                <h4>Made With Love</h4>
+                <p>Dibuat dengan perhatian di setiap prosesnya.</p>
+              </div>
+            </div>
+          </div>
+          <!-- BUTTON -->
+        </div>
+
+        <section class="testimonial-section">
+          <div class="testimonial-heading">
+            <h3>Ceritakan Pengalamanmu</h3>
+          </div>
+
+          <div class="rating-summary" aria-live="polite">
+            <div class="rating-overview">
+              <strong id="rating-average">0.0</strong>
+              <div id="rating-summary-stars" class="rating-summary-stars">
+                ☆☆☆☆☆
+              </div>
+              <span id="rating-total">Belum ada ulasan</span>
+            </div>
+            <div id="rating-breakdown" class="rating-breakdown">
+              <div>
+                <span>5 ★</span><i><b data-rating-bar="5"></b></i
+                ><small data-rating-count="5">0</small>
+              </div>
+              <div>
+                <span>4 ★</span><i><b data-rating-bar="4"></b></i
+                ><small data-rating-count="4">0</small>
+              </div>
+              <div>
+                <span>3 ★</span><i><b data-rating-bar="3"></b></i
+                ><small data-rating-count="3">0</small>
+              </div>
+              <div>
+                <span>2 ★</span><i><b data-rating-bar="2"></b></i
+                ><small data-rating-count="2">0</small>
+              </div>
+              <div>
+                <span>1 ★</span><i><b data-rating-bar="1"></b></i
+                ><small data-rating-count="1">0</small>
+              </div>
+            </div>
+          </div>
+
+          <form id="testimonial-form" class="testimonial-form">
+            <label>
+              Nama
+              <input
+                id="testimonial-name"
+                type="text"
+                placeholder="Nama kamu"
+                required
+              />
+            </label>
+
+            <fieldset class="rating-field">
+              <legend>Rating</legend>
+              <div class="star-rating" aria-label="Pilih rating bintang">
+                <input
+                  type="radio"
+                  id="star-5"
+                  name="rating"
+                  value="5"
+                  required
+                />
+                <label for="star-5" title="5 bintang">★</label>
+                <input type="radio" id="star-4" name="rating" value="4" />
+                <label for="star-4" title="4 bintang">★</label>
+                <input type="radio" id="star-3" name="rating" value="3" />
+                <label for="star-3" title="3 bintang">★</label>
+                <input type="radio" id="star-2" name="rating" value="2" />
+                <label for="star-2" title="2 bintang">★</label>
+                <input type="radio" id="star-1" name="rating" value="1" />
+                <label for="star-1" title="1 bintang">★</label>
+              </div>
+            </fieldset>
+
+            <label class="upload-field">
+              Upload Foto
+              <input id="testimonial-image" type="file" accept="image/*" />
+              <span>Pilih foto pengalamanmu</span>
+            </label>
+
+            <label class="review-field">
+              Beri Ulasan Terbaikmu!
+              <textarea
+                id="testimonial-review"
+                rows="5"
+                placeholder="Tulis ulasan kamu"
+                required
+              ></textarea>
+            </label>
+
+            <button type="submit">Kirim Testimoni</button>
+          </form>
+
+          <div
+            id="testimonial-list"
+            class="testimonial-list"
+            aria-live="polite"
+          ></div>
+        </section>
+
+        <button class="back-btn" onclick="showPage('contact')">
+          Contact Us ⇢
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================================================
+     CONTACT SECTION
+================================================== -->
+    <section id="contact" class="page">
+      <div class="contact-hero"></div>
+      <div class="contact-hero-title">
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+
+      <div class="contact-main">
+        <div class="contact-details">
+          <h2>Get In Touch</h2>
+          <p>
+            Punya pertanyaan, ingin order, atau sekadar ingin ngobrol tentang
+            kopi? Hubungi Kami melalui kontak di bawah ini.
+          </p>
+
+          <div class="contact-detail-grid">
+            <a
+              href="https://wa.me/6285817595861"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="detail-icon"
+                ><img src="images/wht.png" alt=""
+              /></span>
+              <span
+                ><strong>WhatsApp</strong><small>0858-1759-5861</small></span
+              >
+            </a>
+            <a
+              href="https://instagram.com/divisi.coffee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="detail-icon"
+                ><img src="images/ig.png" alt=""
+              /></span>
+              <span
+                ><strong>Instagram</strong><small>@divisi.coffee</small></span
+              >
+            </a>
+            <a
+              href="https://www.tiktok.com/@divisi.coffee_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="detail-icon"
+                ><img src="images/tik.png" alt=""
+              /></span>
+              <span><strong>TikTok</strong><small>@divisi.coffee_</small></span>
+            </a>
+            <a
+              href="https://www.google.com/maps/@-6.243796,107.015739,16z"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="detail-icon"
+                ><img src="images/loc.png" alt=""
+              /></span>
+              <span
+                ><strong>Location</strong
+                ><small>Jl. Prof. Moch. Yamin No.92, Bekasi Timur</small></span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          title="Lokasi Divisi Coffee"
+          src="https://www.google.com/maps?q=-6.243796,107.015739&z=16&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- ================= FLOATING WA ================= -->
+    <a href="#" class="floating-wa"></a>
+    <script src="js/supabase-config.js?v=1"></script>
+    <script src="js/script.js?v=3"></script>
+  </body>
+</html>
